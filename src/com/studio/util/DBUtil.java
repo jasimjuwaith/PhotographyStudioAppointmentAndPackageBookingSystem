@@ -15,14 +15,14 @@ public class DBUtil {
 		 return conn;
 	}
 	
-//	public static void main(String[] args) {
-//		try {
-//		Connection con = DBUtil.getDBConnection();
-//		if(con != null) {
-//			System.out.print("Working");
-//		}
-//		}catch(Exception e) {
-//			System.out.print(e);
-//		}
-//	}
+	public static void main(String[] args) {
+		try {
+		Connection con = DBUtil.getDBConnection();
+		if(con != null) {
+			System.out.print("Testing");
+		}
+		}catch(Exception e) {
+			System.out.print(e);
+		}
+	}
 }
