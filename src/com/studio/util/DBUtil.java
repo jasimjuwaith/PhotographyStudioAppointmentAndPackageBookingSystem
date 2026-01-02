@@ -8,21 +8,21 @@ public class DBUtil {
 		 try {
 			 Class.forName("oracle.jdbc.driver.OracleDriver");
 			 
-			 conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe","","");
+			 conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe","java","java");
 		 }catch(Exception e) {
 			 System.out.print(e);
 		 }
 		 return conn;
 	}
 	
-//	public static void main(String[] args) {
-//		try {
-//		Connection con = DBUtil.getDBConnection();
-//		if(con != null) {
-//			System.out.print("Working");
-//		}
-//		}catch(Exception e) {
-//			System.out.print(e);
-//		}
-//	}
+	public static void main(String[] args) {
+		try {
+		Connection con = DBUtil.getDBConnection();
+		if(con != null) {
+			System.out.print("Working");
+		}
+		}catch(Exception e) {
+			System.out.print(e);
+		}
+	}
 }
