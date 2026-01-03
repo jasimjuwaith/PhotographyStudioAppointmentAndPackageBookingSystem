@@ -7,7 +7,7 @@ import com.studio.util.*;
 public class StudioMain {
 	private static BookingService bookingService;
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception{
 		bookingService = new BookingService();
 		Scanner sc = new Scanner(System.in);
 		System.out.println("--- Photography Studio Booking Console ---");

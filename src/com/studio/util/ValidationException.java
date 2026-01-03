@@ -6,14 +6,13 @@ public class ValidationException extends Exception {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private String message;
-
-    public ValidationException(String message) {
-        this.message = message;
-    }
-
+	
+	public ValidationException(String message) {
+		super(message);
+	}
+	
     @Override
     public String toString() {
-        return "ValidationException: " + message;
+        return "ValidationException: " + getMessage();
     }
 }

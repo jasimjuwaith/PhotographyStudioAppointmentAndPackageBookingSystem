@@ -22,7 +22,7 @@ public class BookingDAO {
 			ResultSet rs = st.executeQuery(sql);
 
 			if (rs.next()) {
-				return rs.getInt(1);
+				return (int)rs.getInt(1);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -76,7 +76,7 @@ public class BookingDAO {
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
 
-			ps.setDate(1, new java.sql.Date(newShootDate.getTime()));
+			ps.setDate(1, new Date(newShootDate.getTime()));
 			ps.setString(2, newStartTime);
 			ps.setString(3, newEndTime);
 			ps.setInt(4, bookingID);
