@@ -8,7 +8,7 @@ public class DBUtil {
 		 try {
 			 Class.forName("oracle.jdbc.driver.OracleDriver");
 			 
-			 conn = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe","java","java");
+			 conn = DriverManager.getConnection("jdbc:oracle:thin:@10.192.27.27:1521:xe","java","java");
 		 }catch(Exception e) {
 			 System.out.print(e);
 		 }
@@ -19,11 +19,7 @@ public class DBUtil {
 		try {
 		Connection con = DBUtil.getDBConnection();
 		if(con != null) {
-<<<<<<< HEAD
-			System.out.print("Working");
-=======
 			System.out.print("Testing");
->>>>>>> 8bd147710614f80ad15a8634f0033095c6655bca
 		}
 		}catch(Exception e) {
 			System.out.print(e);

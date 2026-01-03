@@ -10,6 +10,18 @@ public class Booking {
 	private String endTime;
 	private String packageType;
 	
+	public Booking(int bookingID, String customerId, Date shootDate, String startTime, String endTime,
+			String packageType) {
+		super();
+		this.bookingID = bookingID;
+		this.customerId = customerId;
+		this.shootDate = shootDate;
+		this.startTime = startTime;
+		this.endTime = endTime;
+		this.packageType = packageType;
+	}
+	public Booking() {
+	}
 	public int getBookingId() {
 		return bookingID;
 	}
